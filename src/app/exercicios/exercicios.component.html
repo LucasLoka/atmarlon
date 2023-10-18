@@ -1,0 +1,25 @@
+<main>
+    <article>
+    <p>olá mundo</p>
+    <p>{{frase}}</p>
+    </article>
+    <article>
+        <h1> Chainsaw Man - Anime:<a href="{{ link }}">clique</a></h1>
+    </article>
+    <article>
+        <h2>
+    <p [style.color]="cor" (click)="mudaCor()">clica em mim pls!!!</p>
+        </h2>
+    </article>
+    <article>
+        <h2>textos</h2>
+        <select #select (change)="setTexto(select.value)">
+            <option default>selecione um texto</option>
+            <option value="Em pleno 2022">Toguro</option>
+            <option value="A dor é inevitável, mas o sofrimento é opcional">Pain</option>
+            <option value="ジョジョの奇妙な冒険 JoJo Bizarre Adventure">JOJO</option>
+            <option value="Ninguem apaga minha luz....">Matue</option>
+        </select>
+        <p>{{texto}}</p>
+    </article>
+</main>
